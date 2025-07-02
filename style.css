@@ -1,0 +1,170 @@
+.header {
+    gap: 60%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px rgb(180, 179, 179);
+    align-items: center;
+}
+
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.nav-items ul {
+    justify-content: center;
+    display: flex;
+    gap: 8%;
+    list-style: none;
+    margin-top: 2rem;
+    font-size: medium;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.nav-items ul li:hover {
+    cursor: pointer;
+}
+
+.body {
+    max-width: 50%;
+    justify-self: center;
+}
+
+.search-container {
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    border: 1.2px solid rgb(99, 97, 97);
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    padding-right: 40px;
+    color: #6a6a6a;
+}
+
+.search-input::placeholder {
+    color: #6a6a6a;
+}
+
+.search-icon-button {
+    position: absolute;
+    right: 5px;
+    height: calc(100% - 4px);
+    width: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.search-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.res-container {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 7% auto 0 auto;
+    max-width: 100%;
+    width: 90%;
+}
+
+.card-container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-container:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.name-rating {
+    display: flex;
+    justify-content: space-between
+}
+
+.name-rating h3 {
+    margin-top: 5px;
+    font-size: medium;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.rating-container {
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 24px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-container h3 {
+    color: white;
+    margin: auto;
+    font-size: small;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.rating-container h2 {
+    color: white;
+    font-size: small;
+    font-weight: 400;
+    margin: auto;
+}
+
+.food-rate-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: #6a6a6a;
+}
+
+.food-detail {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40%;
+}
+
+.rate-detail {
+    white-space: nowrap;
+}
