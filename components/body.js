@@ -39,6 +39,7 @@ const ResDetails = (props) => {
     </div>
   );
 };
+
 const ResContainer = (props) => {
   return (
     <div className="card-container">
