@@ -1,3 +1,11 @@
+import {
+  LINKEDIN_LOGO,
+  INSTAGRAM_LOGO,
+  FACEBOOK_LOGO,
+  PINTEREST_LOGO,
+  LOGO_URL,
+} from "../utils/constants";
+
 const CompanyList = () => {
   return (
     <div className="about-company-list">
@@ -46,40 +54,28 @@ const Social_Links = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://img.icons8.com/color/48/linkedin.png"
-            alt="LinkedIn"
-          />
+          <img src={LINKEDIN_LOGO} alt="LinkedIn" />
         </a>
         <a
           href="https://www.pinterest.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://img.icons8.com/color/48/pinterest--v1.png"
-            alt="Pinterest"
-          />
+          <img src={PINTEREST_LOGO} alt="Pinterest" />
         </a>
         <a
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://img.icons8.com/color/48/instagram-new--v1.png"
-            alt="Instagram"
-          />
+          <img src={INSTAGRAM_LOGO} alt="Instagram" />
         </a>
         <a
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="https://img.icons8.com/color/48/facebook-new.png"
-            alt="Facebook"
-          />
+          <img src={FACEBOOK_LOGO} alt="Facebook" />
         </a>
       </div>
     </div>
@@ -90,7 +86,7 @@ export const Footer = () => {
   return (
     <div className="footer-container">
       <div className="company-logo">
-        <img src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg"></img>
+        <img src={LOGO_URL}></img>
         <h3>© 2025 Food Limited</h3>
       </div>
       <CompanyList />

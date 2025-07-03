@@ -1,12 +1,11 @@
+import { LOGO_URL } from "../utils/constants";
+
 export const Header = () => {
   return (
     <div className="header">
       <div className="logo">
         <a href="/">
-          <img
-            src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg"
-            alt="logo"
-          />
+          <img src={LOGO_URL} alt="logo" />
         </a>
       </div>
       <div className="nav-items">
